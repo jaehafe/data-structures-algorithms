@@ -1,4 +1,7 @@
-// // pseudocode
+// pseudocode
+// 1. accepts a sorted array and a value
+// 2. create left pointer at the start of the array, and a right pointer at the end of the array
+// 3.
 
 // const binarySearch = (arr, elem) => {
 //   let start = 0;
@@ -55,6 +58,7 @@ function binarySearch(arr, elem) {
   let start = 0;
   let end = arr.length - 1;
   let middle = Math.floor((start + end) / 2);
+
   while (arr[middle] !== elem && start <= end) {
     console.log(start, middle, end);
     if (elem < arr[middle]) {
